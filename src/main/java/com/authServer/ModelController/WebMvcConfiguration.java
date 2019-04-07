@@ -10,13 +10,4 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Controller
 public class WebMvcConfiguration {
 	
-//	@RequestMapping("/login")
-//    public String greeting(Model model) {
-//        return "login";
-//    }
-
-	@RequestMapping("/login")
-	 public String home() {
-	  return "index";
-	 }
 }

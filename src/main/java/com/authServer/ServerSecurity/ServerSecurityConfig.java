@@ -38,6 +38,6 @@ public class ServerSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers("/login").permitAll()
             .anyRequest().authenticated()
             .and()
-            .formLogin().permitAll().loginPage("/index");
+            .formLogin().permitAll();//.loginPage("/index");
     }
 }
