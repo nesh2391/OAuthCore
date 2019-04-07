@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+    	    $("#clickme").click(function(){
+	       $.get("/ajax/details.php", function(data, status){
+                  $("#mobiles").html(data);
+               });
+    	    });
+         });
+      </script>
+   </head>
+   <body>
+      <button id="clickme">Show Details</button>
+      <div id="mobiles"></div>
+   </body>
+</html>
